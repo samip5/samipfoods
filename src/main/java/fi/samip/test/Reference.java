@@ -1,5 +1,7 @@
 package fi.samip.test;
 
+import net.minecraft.client.resources.I18n;
+
 public class Reference {
 	public static final String MOD_ID = "samiptest";
 	public static final String NAME = "Samip's Test Mod";
@@ -8,6 +10,10 @@ public class Reference {
 	
 	public static final String CLIENT_PROXY_CLASS = "fi.samip.test.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "fi.samip.test.proxy.ServerProxy";
+	
+	public static final String ITALIC = (char) 167 + "o";
+    public static final String BRIGHT_BLUE = (char) 167 + "b";
+
 	
 	public static enum TestItems {
 		CHEESE("cheese", "ItemCheese" ),

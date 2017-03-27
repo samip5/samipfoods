@@ -21,4 +21,10 @@ public class ClientProxy implements CommonProxy{
 	public void registerItemRenderer(Item item, int meta, String id) {
 		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Reference.MOD_ID + ":" + id, "inventory"));
 	}
+
+	@Override
+	public void postInit() {
+		// TODO Auto-generated method stub
+		
+	}
 }
