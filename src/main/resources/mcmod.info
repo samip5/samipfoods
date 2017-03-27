@@ -1,0 +1,16 @@
+[
+{
+  "modid": "samiptest",
+  "name": "Samip's Test Mod",
+  "description": "A useless thing",
+  "version": "Alpha",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["samip537"],
+  "credits": "I thank Zaweri for helping me learning to mod and for the textures he has provided for me to use in this mod.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

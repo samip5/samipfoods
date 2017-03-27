@@ -1,0 +1,7 @@
+item.Cheese.name=Juusto
+item.Cracker.name=Voileipäkeksi
+item.CheeseCracker.name=Voileipäkeksi juustolla
+
+tile.CheeseBlock.name=Juusto kuutio
+
+itemGroup.TestTab=Samip:n Testi Modi

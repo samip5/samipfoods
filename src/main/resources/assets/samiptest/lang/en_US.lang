@@ -1,0 +1,12 @@
+item.Cheese.name=Cheese
+item.Cracker.name=Cracker
+item.CheeseCracker.name=Cracker with Cheese
+
+item.strawberry.name=Strawberry
+item.strawberrySeed.name=Strawberry Seed
+
+
+
+tile.CheeseBlock.name=Cheese Block
+
+itemGroup.TestTab=Samip's Test Mod
