@@ -1,6 +1,9 @@
 item.Cheese.name=Cheese
 item.Cracker.name=Cracker
 item.CheeseCracker.name=Cracker with Cheese
+item.lasagna.name=Raw Lasagna
+item.Cooked_Lasagna.name=Cooked Lasagna
+item.pasta.name=Pasta
 
 item.strawberry.name=Strawberry
 item.strawberrySeed.name=Strawberry Seed

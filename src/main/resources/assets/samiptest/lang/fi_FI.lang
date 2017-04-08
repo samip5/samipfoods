@@ -1,6 +1,9 @@
 item.Cheese.name=Juusto
-item.Cracker.name=Voileip√§keksi
-item.CheeseCracker.name=Voileip√§keksi juustolla
+item.Cracker.name=Voileip‰keksi
+item.CheeseCracker.name=Voileip‰keksi juustolla
+item.lasagna.name=Raaka Lasagne
+item.Cooked_Lasagna.name=Paistettu Lasagne
+item.pasta.name=Pasta
 
 tile.CheeseBlock.name=Juusto kuutio
 
