@@ -1,0 +1,10 @@
+item.Cheese.name=Juusto
+item.Cracker.name=Voileipäkeksi
+item.CheeseCracker.name=Voileipäkeksi juustolla
+item.lasagna.name=Raaka Lasagne
+item.Cooked_Lasagna.name=Paistettu Lasagne
+item.pasta.name=Pasta
+
+tile.CheeseBlock.name=Juusto kuutio
+
+itemGroup.TestTab=Samip:n Testi Modi
