@@ -17,7 +17,13 @@ public class ServerProxy implements CommonProxy {
 	private static final Map<ItemStack, ModelResourceLocation> MODEL_LOCATIONS_FOR_REGISTERING = new HashMap<ItemStack, ModelResourceLocation>();
 
 	@Override
+<<<<<<< HEAD
 	public void init(FMLInitializationEvent e) {
+=======
+	public void init() {
+		// TODO Auto-generated method stub
+		
+>>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
 	}
 
 	public void registerItemRenderer(Item item, int meta, String id) {
@@ -32,12 +38,21 @@ public class ServerProxy implements CommonProxy {
 	}
 	
 	@Override
+<<<<<<< HEAD
 	public void preInit()  {
+=======
+	public void preInit() {
+		// TODO Auto-generated method stub
+>>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
 		
 	}
 
 	@Override
 	public void postInit() {
+<<<<<<< HEAD
+=======
+		// TODO Auto-generated method stub
+>>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
 		
 	}
 }

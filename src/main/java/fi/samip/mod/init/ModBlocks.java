@@ -4,8 +4,12 @@ import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.blocks.growables.BlockCropStrawberry;
 import fi.samip.mod.items.ItemModelProvider;
 import fi.samip.mod.blocks.BlockBase;
+<<<<<<< HEAD
 import fi.samip.mod.blocks.BlockTinOre;
 import fi.samip.mod.blocks.SaltBlock;
+=======
+import fi.samip.mod.blocks.BlockSalt;
+>>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemBlock;
@@ -48,15 +52,23 @@ public class ModBlocks {
 	
 	public static BlockBase cheeseblock;
 	public static BlockCropStrawberry cropStrawberry;
+<<<<<<< HEAD
 	public static SaltBlock saltBlock;
 	public static BlockTinOre tinOre;
+=======
+	public static BlockSalt saltBlock;
+>>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
 	
 	
 	public static void init() {
 		cheeseblock = register(new BlockBase(Material.ROCK, "CheeseBlock").setCreativeTab(InitCreativeTabs.TestTab));
 		cropStrawberry = register(new BlockCropStrawberry(), null);
+<<<<<<< HEAD
 		saltBlock = register(new SaltBlock());
 		tinOre = register(new BlockTinOre());
+=======
+		saltBlock = register(new BlockSalt());
+>>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
 	}
 
 	private static <T extends Block> T register(T block, ItemBlock itemBlock) {

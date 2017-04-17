@@ -75,10 +75,16 @@ public class Reference {
 	}
 	
 	public static enum Blocks {
+<<<<<<< HEAD
 		CHEESE("cheese", "CheeseBlock"),
 		CropStrawberry("cropStrawberry", "cropStrawberry"),
 		Salt("Salt", "SaltBlock"),
 		Tin_Ore("BlockTinOre", "TinBlock");
+=======
+		CHEESE("cheese", "BlockCheese"),
+		CropStrawberry("cropStrawberry", "cropStrawberry"),
+		Salt("Salt", "BlockSalt");
+>>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
 		
 		private String unlocalizedName;
 		private String registryName;
