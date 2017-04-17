@@ -1,6 +1,5 @@
 package fi.samip.mod.blocks;
 
-import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
 import fi.samip.mod.SamipTest;
 import fi.samip.mod.blocks.item.IMetaBlockName;
@@ -15,7 +14,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
