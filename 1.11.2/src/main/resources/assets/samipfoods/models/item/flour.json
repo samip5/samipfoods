@@ -1,5 +1,5 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "samiptest:items/flour"
+        "layer0": "samipfoods:items/flour"
     }}

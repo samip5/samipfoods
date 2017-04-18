@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "samiptest:items/strawberry_seed"
+        "layer0": "samipfoods:items/chocbar"
     }
 }

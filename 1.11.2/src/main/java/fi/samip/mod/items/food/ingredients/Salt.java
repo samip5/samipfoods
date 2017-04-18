@@ -1,15 +1,21 @@
 package fi.samip.mod.items.food.ingredients;
 
-import fi.samip.mod.InitCreativeTabs;
-import fi.samip.mod.Reference;
+import fi.samip.mod.SamipFoods;
+import fi.samip.mod.lib.Names;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class Salt extends Item {
 	
 	public Salt() {
-		setUnlocalizedName(Reference.Ingredients.Salt.getUnlocalizedName());
-		setRegistryName(Reference.Ingredients.Salt.getRegistryName());
-		setCreativeTab(InitCreativeTabs.TestTab);
+		setCreativeTab(SamipFoods.SamipFoodsTab);
+	}
+	
+	@Override
+	public String getUnlocalizedName(ItemStack stack) {
+		
+		return SamipFoods.RESOURCE_PREFIX + Names.Salt;
+		
 	}
 	
 }

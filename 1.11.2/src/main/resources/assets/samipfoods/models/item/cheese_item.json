@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "samiptest:items/cheese"
+        "layer0": "samipfoods:items/cheese"
     },
     "display": {
         "thirdperson": {

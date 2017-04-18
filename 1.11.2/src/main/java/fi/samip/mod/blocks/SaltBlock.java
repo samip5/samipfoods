@@ -2,8 +2,8 @@ package fi.samip.mod.blocks;
 
 import java.util.Random;
 
-import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
+import fi.samip.mod.SamipFoods;
 import fi.samip.mod.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -16,7 +16,7 @@ public class SaltBlock extends Block {
 		super(Material.IRON);
 		setUnlocalizedName(Reference.Blocks.Salt.getUnlocalizedName());
 		setRegistryName(Reference.Blocks.Salt.getRegistryName());
-		setCreativeTab(InitCreativeTabs.TestTab);
+		setCreativeTab(SamipFoods.SamipFoodsTab);
 		setHardness(10.0f);
 		setResistance(14.0f);
 		setHarvestLevel("showel", 1);
