@@ -1,7 +1,7 @@
 package fi.samip.mod.blocks;
 
-import fi.samip.mod.InitCreativeTabs;
-import fi.samip.mod.Reference;
+import fi.samip.mod.SamipFoods;
+import fi.samip.mod.lib.Names;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -9,9 +9,14 @@ public class CheeseBlock extends Block {
 
 	public CheeseBlock() {
 		super(Material.CAKE);
-		setUnlocalizedName(Reference.Blocks.CHEESE.getUnlocalizedName());
-		setRegistryName(Reference.Blocks.CHEESE.getRegistryName());
-		setCreativeTab(InitCreativeTabs.TestTab);
+		setCreativeTab(SamipFoods.SamipFoodsTab);
 	}
 
+	@Override
+	public String getUnlocalizedName() {
+		
+		return SamipFoods.RESOURCE_PREFIX + "tile." + Names.CheeseBlock;
+		
+	}
+	
 }

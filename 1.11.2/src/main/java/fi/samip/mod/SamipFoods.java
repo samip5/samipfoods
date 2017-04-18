@@ -1,12 +1,12 @@
 package fi.samip.mod;
 
-import fi.samip.mod.handlers.ConfigHandler;
-import fi.samip.mod.handlers.RecipeHandler;
-import fi.samip.mod.init.ModBlocks;
-import fi.samip.mod.init.ModItems;
+import java.io.File;
+
 import fi.samip.mod.proxy.CommonProxy;
 import fi.samip.mod.util.ModUtil;
-import fi.samip.mod.worldgen.ItemGen;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -14,13 +14,12 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod (modid = ModUtil.MOD_ID, name = ModUtil.NAME, version = ModUtil.VERSION, acceptedMinecraftVersions = ModUtil.ACCEPTED_VERSIONS)
 public class SamipFoods {
-	
-	public static ConfigHandler config;
 
+	public static Configuration configuration;
+	
 	 /**
 	   * Resource prefix is used for ModelResourceLocations and some other things. It's just the mod ID followed by a colon.
 	   */
@@ -48,16 +47,9 @@ public class SamipFoods {
 	 */
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		ModUtil.LOGGER.info("Starting PreInitialization Phase...");
-		config = new ConfigHandler(new Configuration(event.getSuggestedConfigurationFile()));
-		
-		ModBlocks.init();
-		ModItems.init();
-		
-		/*ModBlocks.register();
-		 ModItems.register(); */
-		
-		ModUtil.LOGGER.info("PreInitialization Finished.");
+		File config = event.getSuggestedConfigurationFile();
+		configuration = new Configuration(config);
+		proxy.preInit(event);
 	}
 	
 	/**
@@ -66,13 +58,8 @@ public class SamipFoods {
 	 */
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		ModUtil.LOGGER.info("Starting Initialization Phase...");
 		proxy.init(event);
-		GameRegistry.registerWorldGenerator(new ItemGen(), 0);
-		RecipeHandler.registerCraftingRecipes();
-		RecipeHandler.registerFurnaceRecipes();
 		
-		ModUtil.LOGGER.info("Initialization Finished.");
 	}
 	
 	/**
@@ -81,8 +68,17 @@ public class SamipFoods {
 	 */
 	@EventHandler
 	public void PostInit(FMLPostInitializationEvent event) {
-		ModUtil.LOGGER.info("Starting PostInitialization Phase...");
-		proxy.postInit();
-		ModUtil.LOGGER.info("PostInitialization Finished.");
+		proxy.postInit(event);
 	}
+	
+	public static final CreativeTabs SamipFoodsTab = new CreativeTabs("SamipFoodsTab") {
+		
+		@Override 
+		public ItemStack getTabIconItem() {
+		    return new ItemStack(Items.DIAMOND);
+		}
+		public int getItemIconDamage() {
+		    return 4;
+		}
+	};
 }

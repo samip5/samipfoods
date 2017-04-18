@@ -1,10 +1,10 @@
-item.Cheese.name=Juusto
-item.Cracker.name=Voileip‰keksi
-item.CheeseCracker.name=Voileip‰keksi juustolla
-item.lasagna.name=Raaka Lasagne
-item.Cooked_Lasagna.name=Paistettu Lasagne
-item.pasta.name=Pasta
+cheese.name=Juusto
+cracker.name=Voileip√§keksi
+cheese_cracker.name=Voileip√§keksi juustolla
+raw_lasagna.name=Raaka Lasagne
+cooked_lasagna.name=Paistettu Lasagne
+pasta.name=Pasta
 
 tile.CheeseBlock.name=Juusto kuutio
 
-itemGroup.TestTab=Samip:n Testi Modi
+itemGroup.SamipFoodsTab=Samip:n Testi Modi

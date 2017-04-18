@@ -1,10 +1,10 @@
 package fi.samip.mod.blocks;
 
-import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
 import fi.samip.mod.SamipFoods;
 import fi.samip.mod.blocks.item.IMetaBlockName;
 import fi.samip.mod.handlers.EnumHandler.OreType;
+import fi.samip.mod.lib.Names;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -34,13 +34,19 @@ public class BlockTinOre extends Block implements IMetaBlockName{
 	 */
 	public BlockTinOre() {
 		super(Material.ROCK);
-		setUnlocalizedName(Reference.Blocks.Tin_Ore.getUnlocalizedName());
-		setRegistryName(Reference.Blocks.Tin_Ore.getRegistryName());
+		/*setUnlocalizedName(Reference.Blocks.Tin_Ore.getUnlocalizedName());
+		setRegistryName(Reference.Blocks.Tin_Ore.getRegistryName()); */
 		setHardness(20); // Sets how hard the block is to break
 		setResistance(20); // Sets the blocks blast resistance to explosions
 		setDefaultState(blockState.getBaseState().withProperty(TYPE, OreType.OVERWORLD));
-		setCreativeTab(InitCreativeTabs.TestTab);
+		setCreativeTab(SamipFoods.SamipFoodsTab);
 	}
+	
+	/* @Override
+	public String getUnlocalizedName(ItemStack stack) {
+		
+		return SamipFoods.RESOURCE_PREFIX + "tile." + Names.BlockTinOre;
+	} */
 	
 	/**
 	 * All the different item variants for the block

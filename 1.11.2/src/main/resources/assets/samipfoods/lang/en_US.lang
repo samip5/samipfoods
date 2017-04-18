@@ -1,25 +1,20 @@
-item.Cheese.name=Cheese
-item.Cracker.name=Cracker
-item.CheeseCracker.name=Cracker with Cheese
-item.lasagna.name=Raw Lasagna
-item.Cooked_Lasagna.name=Cooked Lasagna
-item.pasta.name=Pasta
-<<<<<<< HEAD
-item.ChocolateBar.name=Chocolate Bar
-item.Flour.name=Flour
-item.Salt.name=Salt
-=======
->>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
-
-item.strawberry.name=Strawberry
-item.strawberrySeed.name=Strawberry Seed
+# Items
+samipfoods:item.cheese_item.name=Cheese
+samipfoods:item.cracker.name=Cracker
+samipfoods:item.cheese_cracker.name=Cracker with Cheese
+samipfoods:item.raw_lasagna.name=Raw Lasagna
+samipfoods:item.cooked_lasagna.name=Cooked Lasagna
+samipfoods:item.pasta.name=Pasta
+samipfoods:item.chocolate_bar.name=Chocolate Bar
+samipfoods:item.flour.name=Flour
+samipfoods:item.salt.name=Salt
+samipfoods:item.strawberry_item.name=Strawberry
+samipfoods:item.strawberry_seed.name=Strawberry Seed
 
 
+# Blocks
+samipfoods:tile.cheese_block.name=Cheese Block
+samipfoods:tile.salt_block.name=Salt Block
 
-tile.CheeseBlock.name=Cheese Block
-<<<<<<< HEAD
-tile.Salt.name=Salt Block
-=======
->>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
-
-itemGroup.TestTab=Samip's Test Mod
+# Group
+itemGroup.SamipFoodsTab=Samip's Test Mod
