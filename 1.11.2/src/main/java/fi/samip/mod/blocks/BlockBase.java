@@ -1,7 +1,7 @@
 package fi.samip.mod.blocks;
 
 
-import fi.samip.mod.SamipTest;
+import fi.samip.mod.SamipFoods;
 import fi.samip.mod.items.ItemModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -24,7 +24,7 @@ public class BlockBase extends Block implements ItemModelProvider {
 	
 	@Override
 	public void registerItemModel(Item item) {
-		SamipTest.proxy.registerItemRenderer(item, 0, name);
+		SamipFoods.proxy.registerItemRenderer(item, 0, name);
 	}
 
 	@Override

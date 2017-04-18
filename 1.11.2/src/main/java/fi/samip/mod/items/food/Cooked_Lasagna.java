@@ -2,7 +2,7 @@ package fi.samip.mod.items.food;
 
 import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
-import fi.samip.mod.SamipTest;
+import fi.samip.mod.SamipFoods;
 import fi.samip.mod.items.ItemModelProvider;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
@@ -18,7 +18,7 @@ public class Cooked_Lasagna extends ItemFood implements ItemModelProvider{
 
 	@Override
 	public void registerItemModel(Item item) {
-		SamipTest.proxy.registerItemRenderer(this, 0, "Cooked_Lasagna");
+		SamipFoods.proxy.registerItemRenderer(this, 0, "Cooked_Lasagna");
 		
 	}
 

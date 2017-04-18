@@ -2,7 +2,7 @@ package fi.samip.mod.items.food.ingredients;
 
 import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
-import fi.samip.mod.SamipTest;
+import fi.samip.mod.SamipFoods;
 import fi.samip.mod.items.ItemModelProvider;
 import net.minecraft.item.Item;
 
@@ -16,6 +16,6 @@ public class Salt extends Item implements ItemModelProvider{
 
 	@Override
 	public void registerItemModel(Item item) {
-		SamipTest.proxy.registerItemRenderer(this, 0, "salt");
+		SamipFoods.proxy.registerItemRenderer(this, 0, "salt");
 	}
 }

@@ -2,7 +2,7 @@ package fi.samip.mod.blocks;
 
 import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
-import fi.samip.mod.SamipTest;
+import fi.samip.mod.SamipFoods;
 import fi.samip.mod.items.ItemModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -19,7 +19,7 @@ public class CheeseBlock extends Block  implements ItemModelProvider{
 
 	@Override
 	public void registerItemModel(Item item) {
-		SamipTest.proxy.registerItemRenderer(item, 0, "cheeseBlock");
+		SamipFoods.proxy.registerItemRenderer(item, 0, "cheeseBlock");
 	}
 
 }
