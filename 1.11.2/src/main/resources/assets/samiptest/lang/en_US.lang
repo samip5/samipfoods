@@ -1,0 +1,25 @@
+item.Cheese.name=Cheese
+item.Cracker.name=Cracker
+item.CheeseCracker.name=Cracker with Cheese
+item.lasagna.name=Raw Lasagna
+item.Cooked_Lasagna.name=Cooked Lasagna
+item.pasta.name=Pasta
+<<<<<<< HEAD
+item.ChocolateBar.name=Chocolate Bar
+item.Flour.name=Flour
+item.Salt.name=Salt
+=======
+>>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
+
+item.strawberry.name=Strawberry
+item.strawberrySeed.name=Strawberry Seed
+
+
+
+tile.CheeseBlock.name=Cheese Block
+<<<<<<< HEAD
+tile.Salt.name=Salt Block
+=======
+>>>>>>> b663f19939a9b5e61d4145cbd3f55a1bd3d06244
+
+itemGroup.TestTab=Samip's Test Mod
