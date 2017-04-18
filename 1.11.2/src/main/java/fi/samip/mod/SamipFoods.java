@@ -1,7 +1,5 @@
 package fi.samip.mod;
 
-import fi.samip.mod.creativetabs.TabSamipBlocks;
-import fi.samip.mod.creativetabs.TabSamipItems;
 import fi.samip.mod.handlers.ConfigHandler;
 import fi.samip.mod.handlers.RecipeHandler;
 import fi.samip.mod.init.ModBlocks;
@@ -9,11 +7,9 @@ import fi.samip.mod.init.ModItems;
 import fi.samip.mod.proxy.CommonProxy;
 import fi.samip.mod.util.ModUtil;
 import fi.samip.mod.worldgen.ItemGen;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -23,12 +19,14 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod (modid = ModUtil.MOD_ID, name = ModUtil.NAME, version = ModUtil.VERSION, acceptedMinecraftVersions = ModUtil.ACCEPTED_VERSIONS)
 public class SamipFoods {
 	
-	public static final CreativeTabs blocks = new TabSamipBlocks();
-	public static final CreativeTabs items = new TabSamipItems();
-	
-	
 	public static ConfigHandler config;
 
+	 /**
+	   * Resource prefix is used for ModelResourceLocations and some other things. It's just the mod ID followed by a colon.
+	   */
+	  public static final String RESOURCE_PREFIX = ModUtil.MOD_ID.toLowerCase() + ":";
+	
+	
 	/**
 	 * Used for GUI stuff
 	 */

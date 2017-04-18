@@ -6,8 +6,7 @@ import fi.samip.mod.SamipFoods;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 
-public class CheeseCracker  extends ItemFood implements ItemModelProvider{
-
+public class CheeseCracker  extends ItemFood {
 
 	public CheeseCracker() {
 		super(3, 0.6f, false);
@@ -16,8 +15,4 @@ public class CheeseCracker  extends ItemFood implements ItemModelProvider{
 		setCreativeTab(InitCreativeTabs.TestTab);
 	}
 	
-	@Override
-	public void registerItemModel(Item item) {
-		SamipFoods.proxy.registerItemRenderer(this, 0, "cheeseCracker");
-	}
 }

@@ -4,16 +4,13 @@ import java.util.Random;
 
 import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
-import fi.samip.mod.SamipFoods;
 import fi.samip.mod.init.ModItems;
-import fi.samip.mod.items.ItemModelProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 
-public class SaltBlock extends Block implements ItemModelProvider{
+public class SaltBlock extends Block {
 
 	public SaltBlock() {
 		super(Material.IRON);
@@ -33,10 +30,5 @@ public class SaltBlock extends Block implements ItemModelProvider{
     {
         return 4;
     }
-
-	@Override
-	public void registerItemModel(Item item) {
-		SamipFoods.proxy.registerItemRenderer(item, 0, "SaltBlock");
-	}
 	
 }

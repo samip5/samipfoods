@@ -2,11 +2,9 @@ package fi.samip.mod.items.food.ingredients;
 
 import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
-import fi.samip.mod.SamipFoods;
-import fi.samip.mod.items.ItemModelProvider;
 import net.minecraft.item.Item;
 
-public class Flour extends Item implements ItemModelProvider{
+public class Flour extends Item {
 	
 	public Flour() {
 		setUnlocalizedName(Reference.Ingredients.Flour.getUnlocalizedName());
@@ -14,9 +12,5 @@ public class Flour extends Item implements ItemModelProvider{
 		setCreativeTab(InitCreativeTabs.TestTab);
 	}
 
-	@Override
-	public void registerItemModel(Item item) {
-		SamipFoods.proxy.registerItemRenderer(this, 0, "flour");
-	}
 
 }
