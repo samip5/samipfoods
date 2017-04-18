@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 public class ModUtil {
 	
-	public static final String MOD_ID = "samiptest";
+	public static final String MOD_ID = "samipfoods";
 	public static final String NAME = "Samip's Test Mod";
 	public static final String VERSION = "Alpha";
 	public static final String ACCEPTED_VERSIONS = "[1.11.2]";

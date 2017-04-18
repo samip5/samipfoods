@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "samipfoods",
+  "name": "Samip's Food Mod",
+  "description": "An mod originially for a school project",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["samip537"],
+  "credits": "To Pam for allowing the use of his textures.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
