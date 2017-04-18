@@ -2,12 +2,9 @@ package fi.samip.mod.items.food;
 
 import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
-import fi.samip.mod.SamipTest;
-import fi.samip.mod.items.ItemModelProvider;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 
-public class Raw_Lasagna extends ItemFood implements ItemModelProvider {
+public class Raw_Lasagna extends ItemFood {
 
 	public Raw_Lasagna() {
 		super(4, 0.5f, false);
@@ -16,8 +13,4 @@ public class Raw_Lasagna extends ItemFood implements ItemModelProvider {
 		setCreativeTab(InitCreativeTabs.TestTab);
 	}
 	
-	@Override
-	public void registerItemModel(Item item) {
-		SamipTest.proxy.registerItemRenderer(this, 0, "rawLasagna");
-	}
 }

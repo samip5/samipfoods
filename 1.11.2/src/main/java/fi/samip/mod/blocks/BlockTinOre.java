@@ -1,7 +1,8 @@
 package fi.samip.mod.blocks;
 
+import fi.samip.mod.InitCreativeTabs;
 import fi.samip.mod.Reference;
-import fi.samip.mod.SamipTest;
+import fi.samip.mod.SamipFoods;
 import fi.samip.mod.blocks.item.IMetaBlockName;
 import fi.samip.mod.handlers.EnumHandler.OreType;
 import net.minecraft.block.Block;
@@ -38,7 +39,7 @@ public class BlockTinOre extends Block implements IMetaBlockName{
 		setHardness(20); // Sets how hard the block is to break
 		setResistance(20); // Sets the blocks blast resistance to explosions
 		setDefaultState(blockState.getBaseState().withProperty(TYPE, OreType.OVERWORLD));
-		setCreativeTab(SamipTest.blocks);
+		setCreativeTab(InitCreativeTabs.TestTab);
 	}
 	
 	/**
