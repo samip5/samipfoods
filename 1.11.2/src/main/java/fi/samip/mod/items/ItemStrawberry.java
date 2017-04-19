@@ -17,7 +17,7 @@ public class ItemStrawberry extends ItemFood implements ItemOreDict {
 	@Override
 	public String getUnlocalizedName(ItemStack stack) {
 		
-		return SamipFoods.RESOURCE_PREFIX + Names.Strawberry;
+		return SamipFoods.RESOURCE_PREFIX + "item." + Names.Strawberry;
 		
 	}
 

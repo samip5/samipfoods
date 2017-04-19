@@ -31,4 +31,10 @@ public class Names {
 	public static final String Cracker = "cracker";
 	public static final String Strawberry = "strawberry_item";
 	public static final String StrawberrySeed = "strawberry_seed";
+	
+	/*
+	 * Crops
+	 */
+	
+	public static final String cropStrawberry = "strawberry_crop";
 }

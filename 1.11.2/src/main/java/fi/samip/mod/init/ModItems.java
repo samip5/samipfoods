@@ -42,7 +42,7 @@ public class ModItems {
 	
 	public static void init() {
 		
-		// Initialization of items
+		// Initialization of the items
 		cheese = new Cheese();
 		cracker = new Cracker();
 		cheesecracker = new CheeseCracker();
@@ -55,7 +55,7 @@ public class ModItems {
 		Flour = new Flour();
 		Salt = new Salt();
 		
-		// Set registry name for items
+		// Set registry name for the items
 		cheese.setRegistryName(new ResourceLocation(ModUtil.MOD_ID, Names.Cheese));
 		cracker.setRegistryName(new ResourceLocation(ModUtil.MOD_ID, Names.Cracker));
 		cheesecracker.setRegistryName(new ResourceLocation(ModUtil.MOD_ID, Names.CheeseCracker));

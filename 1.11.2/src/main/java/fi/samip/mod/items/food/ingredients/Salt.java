@@ -14,7 +14,7 @@ public class Salt extends Item {
 	@Override
 	public String getUnlocalizedName(ItemStack stack) {
 		
-		return SamipFoods.RESOURCE_PREFIX + Names.Salt;
+		return SamipFoods.RESOURCE_PREFIX + "item." + Names.Salt;
 		
 	}
 	

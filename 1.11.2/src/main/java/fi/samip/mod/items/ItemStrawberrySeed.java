@@ -17,7 +17,7 @@ public class ItemStrawberrySeed extends ItemSeeds {
 	@Override
 	public String getUnlocalizedName(ItemStack stack) {
 		
-		return SamipFoods.RESOURCE_PREFIX + Names.StrawberrySeed;
+		return SamipFoods.RESOURCE_PREFIX + "item." + Names.StrawberrySeed;
 		
 	}
 

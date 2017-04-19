@@ -23,7 +23,7 @@ public class BlockSalt extends Block{
 	@Override
 	public String getUnlocalizedName() {
 		
-		return "tile." + SamipFoods.RESOURCE_PREFIX + Names.SaltBlock;
+		return "tile." + SamipFoods.RESOURCE_PREFIX + "tile." + Names.SaltBlock;
 		
 	}
 	

@@ -15,7 +15,7 @@ public class Cooked_Lasagna extends ItemFood {
 	@Override
 	public String getUnlocalizedName(ItemStack stack) {
 		
-		return SamipFoods.RESOURCE_PREFIX + Names.CookedLasagna;
+		return SamipFoods.RESOURCE_PREFIX + "item." + Names.CookedLasagna;
 		
 	}
 

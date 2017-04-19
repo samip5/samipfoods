@@ -35,7 +35,7 @@ public class ClientProxy extends CommonProxy{
 	    ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
 	    
 	    // Register block models
-	    
+	    ModBlocks.initTextures(mesher);
 	    // Register item models
 	    ModItems.InitTextures(mesher);
 	}

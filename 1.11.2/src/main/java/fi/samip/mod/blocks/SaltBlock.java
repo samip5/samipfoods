@@ -5,6 +5,7 @@ import java.util.Random;
 import fi.samip.mod.Reference;
 import fi.samip.mod.SamipFoods;
 import fi.samip.mod.init.ModItems;
+import fi.samip.mod.lib.Names;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -14,12 +15,17 @@ public class SaltBlock extends Block {
 
 	public SaltBlock() {
 		super(Material.IRON);
-		setUnlocalizedName(Reference.Blocks.Salt.getUnlocalizedName());
-		setRegistryName(Reference.Blocks.Salt.getRegistryName());
 		setCreativeTab(SamipFoods.SamipFoodsTab);
 		setHardness(10.0f);
 		setResistance(14.0f);
 		setHarvestLevel("showel", 1);
+	}
+	
+	@Override
+	public String getUnlocalizedName() {
+		
+		return SamipFoods.RESOURCE_PREFIX + "tile." + Names.SaltBlock;
+		
 	}
 	
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {

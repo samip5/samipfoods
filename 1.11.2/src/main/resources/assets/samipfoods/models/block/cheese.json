@@ -1,12 +1,12 @@
 {
     "parent": "block/cube",
     "textures": {
-        "up": "samiptest:blocks/cheese_top",
-        "down": "samiptest:blocks/cheese_top",
-        "west": "samiptest:blocks/cheese_side",
-        "east": "samiptest:blocks/cheese_side",
-        "north": "samiptest:blocks/cheese_side",
-        "south": "samiptest:blocks/cheese_side"
+        "up": "samipfoods:blocks/cheese_top",
+        "down": "samipfoods:blocks/cheese_top",
+        "west": "samipfoods:blocks/cheese_side",
+        "east": "samipfoods:blocks/cheese_side",
+        "north": "samipfoods:blocks/cheese_side",
+        "south": "samipfoods:blocks/cheese_side"
         },
      "display": {
          "thirdperson": {

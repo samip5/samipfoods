@@ -15,7 +15,7 @@ public class Cracker extends ItemFood {
 		@Override
 		public String getUnlocalizedName(ItemStack stack) {
 			
-			return SamipFoods.RESOURCE_PREFIX + Names.Cracker;
+			return SamipFoods.RESOURCE_PREFIX + "item." + Names.Cracker;
 			
 		}
 

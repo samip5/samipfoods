@@ -14,7 +14,7 @@ public class Flour extends Item {
 	@Override
 	public String getUnlocalizedName(ItemStack stack) {
 		
-		return SamipFoods.RESOURCE_PREFIX + Names.Flour;
+		return SamipFoods.RESOURCE_PREFIX + "item." + Names.Flour;
 		
 	}
 

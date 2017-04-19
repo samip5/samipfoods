@@ -15,7 +15,7 @@ public class CheeseBlock extends Block {
 	@Override
 	public String getUnlocalizedName() {
 		
-		return "tile." + SamipFoods.RESOURCE_PREFIX + Names.CheeseBlock;
+		return SamipFoods.RESOURCE_PREFIX + "tile." + Names.CheeseBlock;
 		
 	}
 	
