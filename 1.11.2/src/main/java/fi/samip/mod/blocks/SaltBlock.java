@@ -16,9 +16,9 @@ public class SaltBlock extends Block {
 	public SaltBlock() {
 		super(Material.IRON);
 		setCreativeTab(SamipFoods.SamipFoodsTab);
-		setHardness(10.0f);
-		setResistance(14.0f);
-		setHarvestLevel("showel", 1);
+		setHardness(3.0f);
+		setResistance(5.0f);
+		setHarvestLevel("shovel", 1);
 	}
 	
 	@Override

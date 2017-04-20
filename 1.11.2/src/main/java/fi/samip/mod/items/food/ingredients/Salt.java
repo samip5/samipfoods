@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 public class Salt extends Item {
 	
 	public Salt() {
+		setMaxStackSize(16);
 		setCreativeTab(SamipFoods.SamipFoodsTab);
 	}
 	

@@ -1,12 +1,9 @@
 package fi.samip.mod;
 
-import fi.samip.mod.handlers.ConfigHandler;
-import fi.samip.mod.handlers.RecipeHandler;
-import fi.samip.mod.init.ModBlocks;
-import fi.samip.mod.init.ModItems;
+import java.io.File;
+
 import fi.samip.mod.proxy.CommonProxy;
 import fi.samip.mod.util.ModUtil;
-import fi.samip.mod.worldgen.ItemGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -17,11 +14,12 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod (modid = ModUtil.MOD_ID, name = ModUtil.NAME, version = ModUtil.VERSION, acceptedMinecraftVersions = ModUtil.ACCEPTED_VERSIONS)
 public class SamipFoods {
 
+	public static Configuration configuration;
+	
 	 /**
 	   * Resource prefix is used for ModelResourceLocations and some other things. It's just the mod ID followed by a colon.
 	   */
@@ -49,6 +47,8 @@ public class SamipFoods {
 	 */
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		File config = event.getSuggestedConfigurationFile();
+		configuration = new Configuration(config);
 		proxy.preInit(event);
 	}
 	
@@ -59,6 +59,7 @@ public class SamipFoods {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
+		
 	}
 	
 	/**

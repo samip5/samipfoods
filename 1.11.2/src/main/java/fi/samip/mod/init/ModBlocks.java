@@ -55,15 +55,18 @@ public class ModBlocks {
 		ModelResourceLocation cheeseBlock_model = new ModelResourceLocation(
 				SamipFoods.RESOURCE_PREFIX + Names.CheeseBlock, "inventory");
 		ModelLoader.registerItemVariants(cheeseBlock_item, cheeseBlock_model);
+		mesher.register(cheeseBlock_item, 0, cheeseBlock_model);
 		
 		Item cropStrawberry_item = Item.getItemFromBlock(cropStrawberry);
 		ModelResourceLocation cropStrawberry_model = new ModelResourceLocation(
 				SamipFoods.RESOURCE_PREFIX + Names.cropStrawberry, "inventory");
 		ModelLoader.registerItemVariants(cropStrawberry_item, cropStrawberry_model);
+		mesher.register(cropStrawberry_item, 0, cropStrawberry_model);
 		
 		Item saltBlock_item = Item.getItemFromBlock(saltBlock);
 		ModelResourceLocation saltBlock_model = new ModelResourceLocation(
 				SamipFoods.RESOURCE_PREFIX + Names.SaltBlock, "inventory");
 		ModelLoader.registerItemVariants(saltBlock_item, saltBlock_model);
+		mesher.register(saltBlock_item, 0, saltBlock_model);
 	}
 }

@@ -13,8 +13,8 @@ samipfoods:item.strawberry_seed.name=Strawberry Seed
 
 
 # Blocks
-tile.CheeseBlock.name=Cheese Block
-tile.Salt.name=Salt Block
+samipfoods:tile.cheese_block.name=Cheese Block
+samipfoods:tile.salt_block.name=Salt Block
 
 # Group
 itemGroup.SamipFoodsTab=Samip's Test Mod

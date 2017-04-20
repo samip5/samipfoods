@@ -15,7 +15,8 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 public class ItemGen implements IWorldGenerator{
 
 	//world generators
-	private WorldGenerator tin_ore;
+	//private WorldGenerator tin_ore;
+	private WorldGenerator salt_block;
 	
 	private void runGenerator(WorldGenerator generator, World world, Random rand, int chunk_X, int chunk_Z, int chancesToSpawn, int minHeight, int maxHeight) {
 		if (minHeight < 0 || maxHeight > 256 || minHeight > maxHeight)
@@ -33,6 +34,7 @@ public class ItemGen implements IWorldGenerator{
 	
 	public ItemGen() {
 		//tin_ore = new WorldGenMinable(ModBlocks.tinOre.getDefaultState().withProperty(null, null), 4);
+		
 	}
 	
 	
