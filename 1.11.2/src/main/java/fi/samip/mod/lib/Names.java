@@ -27,6 +27,7 @@ public class Names {
 	public static final String Pasta = "pasta";
 	public static final String RawLasagna = "raw_lasagna";
 	public static final String Cheese = "cheese_item";
+	public static final String CheeseBucket = "cheese_in_a_bucket";
 	public static final String CheeseCracker = "cheese_cracker";
 	public static final String Cracker = "cracker";
 	public static final String Strawberry = "strawberry_item";
