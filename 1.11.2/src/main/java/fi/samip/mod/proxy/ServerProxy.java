@@ -1,29 +1,34 @@
 package fi.samip.mod.proxy;
 
-import java.util.HashMap;
-import java.util.Map;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
+import fi.samip.mod.handlers.GenHandler;
+import fi.samip.mod.handlers.RecipeHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 
 public class ServerProxy extends CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent event) {
-		// TODO Auto-generated method stub
+
 	}
 	
 	@Override
 	public void init(FMLInitializationEvent event) {
+		GameRegistry.registerWorldGenerator(new GenHandler(), 1);
+		RecipeHandler.registerCraftingRecipes();
+		RecipeHandler.registerFurnaceRecipes();
 	}
 	
 	@Override
 	  public void postInit(FMLPostInitializationEvent event) {
 		
 	  }
+	@Override
+	public void serverStarting(FMLServerStartingEvent event) {
+		
+	}
 
 }

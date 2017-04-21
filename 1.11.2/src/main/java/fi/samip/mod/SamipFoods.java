@@ -2,13 +2,8 @@ package fi.samip.mod;
 
 import java.io.File;
 
-import fi.samip.mod.init.ModBlocks;
-import fi.samip.mod.init.ModItems;
 import fi.samip.mod.proxy.CommonProxy;
 import fi.samip.mod.util.ModUtil;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -16,8 +11,9 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
-@Mod (modid = ModUtil.MOD_ID, name = ModUtil.NAME, version = ModUtil.VERSION, acceptedMinecraftVersions = ModUtil.ACCEPTED_VERSIONS)
+@Mod (modid = ModUtil.MOD_ID, guiFactory = ModUtil.GuiFactory_CLASS, name = ModUtil.NAME, version = ModUtil.VERSION, acceptedMinecraftVersions = ModUtil.ACCEPTED_VERSIONS)
 public class SamipFoods {
 
 	public static Configuration configuration;
@@ -72,4 +68,10 @@ public class SamipFoods {
 	public void PostInit(FMLPostInitializationEvent event) {
 		proxy.postInit(event);
 	}
+	
+	@EventHandler
+	public void serverStarting(FMLServerStartingEvent event) {
+		proxy.serverStarting(event);
+	}
+	
 }
