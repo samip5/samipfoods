@@ -13,6 +13,7 @@ public class ModUtil {
 	
 	public static final String CLIENT_PROXY_CLASS = "fi.samip.mod.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "fi.samip.mod.proxy.ServerProxy";
+	public static final String GuiFactory_CLASS = "fi.samip.mod.handlers.gui.GuiConfigFactorySamipFoods";
 
 
 }
