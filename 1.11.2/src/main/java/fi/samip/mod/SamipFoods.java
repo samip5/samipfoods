@@ -2,6 +2,8 @@ package fi.samip.mod;
 
 import java.io.File;
 
+import fi.samip.mod.init.ModBlocks;
+import fi.samip.mod.init.ModItems;
 import fi.samip.mod.proxy.CommonProxy;
 import fi.samip.mod.util.ModUtil;
 import net.minecraft.creativetab.CreativeTabs;
@@ -70,15 +72,4 @@ public class SamipFoods {
 	public void PostInit(FMLPostInitializationEvent event) {
 		proxy.postInit(event);
 	}
-	
-	public static final CreativeTabs SamipFoodsTab = new CreativeTabs("SamipFoodsTab") {
-		
-		@Override 
-		public ItemStack getTabIconItem() {
-		    return new ItemStack(Items.DIAMOND);
-		}
-		public int getItemIconDamage() {
-		    return 4;
-		}
-	};
 }
