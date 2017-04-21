@@ -17,4 +17,5 @@ samipfoods:tile.cheese_block.name=Cheese Block
 samipfoods:tile.salt_block.name=Salt Block
 
 # Group
-itemGroup.SamipFoodsTab=Samip's Test Mod
+itemGroup.SamipFoodsItems=Samip's Food Mod's Items
+itemGroup.SamipFoodsBlocks=Samip's Food Mod's Blocks
