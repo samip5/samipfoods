@@ -1,8 +1,9 @@
-package fi.samip.mod.worldgen;
+package fi.samip.mod.handlers;
 
 import java.util.Random;
 
 import fi.samip.mod.api.SamipFoodsConfig.general;
+import fi.samip.mod.worldgen.SaltGen;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkGenerator;

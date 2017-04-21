@@ -1,10 +1,10 @@
 package fi.samip.mod.proxy;
 
+import fi.samip.mod.handlers.GenHandler;
 import fi.samip.mod.handlers.RecipeHandler;
 import fi.samip.mod.init.ModBlocks;
 import fi.samip.mod.init.ModItems;
 import fi.samip.mod.util.ModUtil;
-import fi.samip.mod.worldgen.GenHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
