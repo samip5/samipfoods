@@ -1,6 +1,7 @@
 package fi.samip.mod.items;
 
 import fi.samip.mod.SamipFoods;
+import fi.samip.mod.init.creativetabs.AllTabs;
 import fi.samip.mod.lib.Names;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
@@ -10,7 +11,7 @@ public class ItemStrawberry extends ItemFood implements ItemOreDict {
 
 	public ItemStrawberry() {
 		super(3, 0.6f, false);
-		setCreativeTab(SamipFoods.SamipFoodsTab);
+		setCreativeTab(AllTabs.SamipFoodsItems);
 		
 	}
 	

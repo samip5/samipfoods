@@ -12,6 +12,16 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 
 public class SaltGen extends WorldGenerator{
 	
+	/*
+	 * 
+	 * This part of the code is from Mekanism.
+	 * 
+	 * Credits to aidancbrady.
+	 * Source: https://github.com/aidancbrady/Mekanism/
+	 * 
+	 */
+	
+	
 	private Block blockGen;
 	private int numberOfBlocks;
 	
