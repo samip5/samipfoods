@@ -4,6 +4,7 @@ import java.util.Random;
 
 import fi.samip.mod.SamipFoods;
 import fi.samip.mod.init.ModItems;
+import fi.samip.mod.init.creativetabs.AllTabs;
 import fi.samip.mod.lib.Names;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,7 +15,7 @@ public class BlockSalt extends Block{
 
 	public BlockSalt() {
 		super(Material.IRON);
-		setCreativeTab(SamipFoods.SamipFoodsTab);
+		setCreativeTab(AllTabs.SamipFoodsBlocks);
 		setHardness(10.0f);
 		setResistance(14.0f);
 		setHarvestLevel("showel", 1);

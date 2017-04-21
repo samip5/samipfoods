@@ -5,6 +5,7 @@ import java.util.Random;
 import fi.samip.mod.Reference;
 import fi.samip.mod.SamipFoods;
 import fi.samip.mod.init.ModItems;
+import fi.samip.mod.init.creativetabs.AllTabs;
 import fi.samip.mod.lib.Names;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -15,7 +16,7 @@ public class SaltBlock extends Block {
 
 	public SaltBlock() {
 		super(Material.IRON);
-		setCreativeTab(SamipFoods.SamipFoodsTab);
+		setCreativeTab(AllTabs.SamipFoodsBlocks);
 		setHardness(3.0f);
 		setResistance(5.0f);
 		setHarvestLevel("shovel", 1);

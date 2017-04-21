@@ -2,6 +2,7 @@ package fi.samip.mod.items;
 
 import fi.samip.mod.SamipFoods;
 import fi.samip.mod.init.ModBlocks;
+import fi.samip.mod.init.creativetabs.AllTabs;
 import fi.samip.mod.lib.Names;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemSeeds;
@@ -11,7 +12,7 @@ public class ItemStrawberrySeed extends ItemSeeds {
 
 	public ItemStrawberrySeed() {
 		super(ModBlocks.cropStrawberry, Blocks.FARMLAND);
-		setCreativeTab(SamipFoods.SamipFoodsTab);
+		setCreativeTab(AllTabs.SamipFoodsItems);
 	}
 	
 	@Override
