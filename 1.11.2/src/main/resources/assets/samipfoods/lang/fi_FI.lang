@@ -1,10 +1,21 @@
-cheese.name=Juusto
-cracker.name=Voileipäkeksi
-cheese_cracker.name=Voileipäkeksi juustolla
-raw_lasagna.name=Raaka Lasagne
-cooked_lasagna.name=Paistettu Lasagne
-pasta.name=Pasta
+# Tavarat
+samipfoods:item.cheese_item.name=Juusto
+samipfoods:item.cracker.name=Voileipäkeksi
+samipfoods:item.cheese_cracker.name=Voileipäkeksi juustolla
+samipfoods:item.raw_lasagna.name=Raaka Lasagne
+samipfoods:item.cooked_lasagna.name=Paistettu Lasagne
+samipfoods:item.pasta.name=Pasta
+samipfoods:item.chocolate_bar.name=Suklaa patukka
+samipfoods:item.flour.name=Jauho
+samipfoods:item.salt.name=Suola
+samipfoods:item.strawberry_item.name=Mansikka
+samipfoods:item.strawberry_seed.name=Mansikan siemen
 
-tile.CheeseBlock.name=Juusto kuutio
 
-itemGroup.SamipFoodsTab=Samip:n Testi Modi
+# Blockit
+samipfoods:tile.cheese_block.name=Juusto Kuutio
+samipfoods:tile.salt_block.name=Suola Kuutio
+
+# Creative Ryhmät
+itemGroup.SamipFoodsItems=Samip:n Ruoka Modin Tavarat
+itemGroup.SamipFoodsBlocks=Samip:n Ruoka Modin Kuutiot
