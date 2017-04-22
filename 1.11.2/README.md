@@ -1,3 +1,3 @@
-"Samipfoods - School minecraft mod project"
+### Samip's Food Mod - The mod for programming class
 
-Trying to update my mod to 1.11.2.
+This mod has been successfully upgraded to Minecraft version 1.11.2.
