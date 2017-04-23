@@ -1,6 +1,0 @@
-{
-  "parent": "samipfoods:block/cheese_block",
-  "textures": {
-    "layer0": "samipfoods:blocks/cheese_block"
-  }
-}

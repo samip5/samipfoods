@@ -1,6 +1,0 @@
-{
-  "parent": "samipfoods:block/salt_block",
-  "textures": {
-    "layer0": "samipfoods:blocks/salt_block"
-  }
-}
