@@ -2,7 +2,7 @@ package fi.samip.mod.worldgen;
 
 import java.util.Random;
 
-import fi.samip.mod.init.ModBlocks;
+import fi.samip.mod.init.BlockLedger;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
@@ -26,7 +26,7 @@ public class SaltGen extends WorldGenerator{
 	private int numberOfBlocks;
 	
 	public SaltGen(int blockNum) {
-		blockGen = ModBlocks.saltBlock;
+		blockGen = BlockLedger.saltBlock;
 		numberOfBlocks = blockNum;
 	}
 	
@@ -48,7 +48,7 @@ public class SaltGen extends WorldGenerator{
 							BlockPos newPos = new BlockPos(xPos, yPos, zPos);
 							Block block = world.getBlockState(newPos).getBlock();
 							
-							if(block == Blocks.DIRT || block == Blocks.CLAY || block == ModBlocks.saltBlock) {
+							if(block == Blocks.DIRT || block == Blocks.CLAY || block == BlockLedger.saltBlock) {
 								world.setBlockState(newPos, blockGen.getDefaultState(), 2);
 							}
 						}

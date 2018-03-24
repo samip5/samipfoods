@@ -3,7 +3,6 @@ package fi.samip.mod.worldgen;
 import java.util.Random;
 
 import fi.samip.mod.blocks.SaltBlock;
-import fi.samip.mod.init.ModBlocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;

@@ -52,7 +52,6 @@ public class BlockTinOre extends Block implements IMetaBlockName{
 	/**
 	 * All the different item variants for the block
 	 */
-	@Override
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, NonNullList<ItemStack> list) {
 		for(int i = 0; i < OreType.values().length; i++) {
 			list.add(new ItemStack(itemIn, 1, i));

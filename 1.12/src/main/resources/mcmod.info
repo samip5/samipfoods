@@ -3,7 +3,7 @@
   "modid": "samipfoods",
   "name": "Samip's Food Mod",
   "description": "An mod originially for a school project. Adds food items and worldgen + blocks, including Finnish pasta.",
-  "version": "Alpha",
+  "version": "1.1",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

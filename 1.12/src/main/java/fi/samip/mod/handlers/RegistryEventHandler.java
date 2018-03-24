@@ -1,5 +1,8 @@
 package fi.samip.mod.handlers;
 
+import fi.samip.mod.init.BlockLedger;
+import fi.samip.mod.init.ItemLedger;
+import fi.samip.mod.util.ModUtil;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.util.SoundEvent;
@@ -15,22 +18,17 @@ public class RegistryEventHandler {
 
 		@SubscribeEvent
 		public static void registerBlocks(final RegistryEvent.Register<Block> event) {
-			
+			BlockLedger.registerBlocks(event);
+			ModUtil.LOGGER.info("Finished registering Blocks");
 		}
 		
 		@SubscribeEvent
 		public static void registerItems(final RegistryEvent.Register<Item> event) {
-			
+			ItemLedger.registerItems(event);
 		}
 		
 		@SubscribeEvent
 		public static void registerSounds(RegistryEvent.Register<SoundEvent> event) {
 			
-		}
-		
-		@SideOnly(Side.CLIENT) 
-		@SubscribeEvent
-		public static void registerItemModesl(final ModelRegistryEvent event){
-		
 		}
 }

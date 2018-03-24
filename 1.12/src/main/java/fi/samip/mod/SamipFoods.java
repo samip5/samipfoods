@@ -16,8 +16,8 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
 @Mod (modid = ModUtil.MOD_ID, guiFactory = ModUtil.GuiFactory_CLASS, name = ModUtil.NAME, version = ModUtil.VERSION, acceptedMinecraftVersions = ModUtil.ACCEPTED_VERSIONS)
 public class SamipFoods {
-
-	public static Configuration configuration;
+	
+	
 	
 	 /**
 	   * Resource prefix is used for ModelResourceLocations and some other things. It's just the mod ID followed by a colon.
@@ -48,9 +48,8 @@ public class SamipFoods {
 	 */
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
 		logger = event.getModLog();
-		File config = event.getSuggestedConfigurationFile();
-		configuration = new Configuration(config);
 		proxy.preInit(event);
 	}
 	

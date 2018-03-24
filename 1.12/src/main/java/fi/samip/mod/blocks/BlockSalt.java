@@ -3,7 +3,7 @@ package fi.samip.mod.blocks;
 import java.util.Random;
 
 import fi.samip.mod.SamipFoods;
-import fi.samip.mod.init.ModItems;
+import fi.samip.mod.init.ItemLedger;
 import fi.samip.mod.init.creativetabs.AllTabs;
 import fi.samip.mod.lib.Names;
 import net.minecraft.block.Block;
@@ -29,7 +29,7 @@ public class BlockSalt extends Block{
 	}
 	
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return ModItems.Salt;
+		return ItemLedger.Salt;
 	}
 	
 	public int quantityDropped(Random random)

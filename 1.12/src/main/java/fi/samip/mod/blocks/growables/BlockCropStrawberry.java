@@ -2,7 +2,7 @@ package fi.samip.mod.blocks.growables;
 
 import fi.samip.mod.Reference;
 import fi.samip.mod.SamipFoods;
-import fi.samip.mod.init.ModItems;
+import fi.samip.mod.init.ItemLedger;
 import fi.samip.mod.lib.Names;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.SoundType;
@@ -24,12 +24,12 @@ public class BlockCropStrawberry extends BlockCrops{
 	@Override
 	protected Item getSeed() {
 		
-		return ModItems.strawberrySeed;
+		return ItemLedger.strawberrySeed;
 	}
 	
 	@Override
 	protected Item getCrop() {
 		
-		return ModItems.strawberry;
+		return ItemLedger.strawberry;
 	}
 }

@@ -1,6 +1,5 @@
 package fi.samip.mod.handlers;
 
-import fi.samip.mod.init.ModItems;
 import fi.samip.mod.util.ModUtil;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;

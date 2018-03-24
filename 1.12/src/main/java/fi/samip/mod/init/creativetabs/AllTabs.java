@@ -1,7 +1,7 @@
 package fi.samip.mod.init.creativetabs;
 
-import fi.samip.mod.init.ModBlocks;
-import fi.samip.mod.init.ModItems;
+import fi.samip.mod.init.BlockLedger;
+import fi.samip.mod.init.ItemLedger;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -12,7 +12,7 @@ public class AllTabs {
 		
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(ModBlocks.cheeseBlock);
+			return new ItemStack(BlockLedger.cheeseBlock);
 		}
 	};
 	
@@ -20,7 +20,7 @@ public class AllTabs {
 		
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(ModItems.cheese);
+			return new ItemStack(ItemLedger.cheese);
 		}
 	};
 }
