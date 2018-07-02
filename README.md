@@ -1,4 +1,4 @@
-# Samip's Food Mod
+# Samip's Food Mod | This repo has been archived.
 
 This mod has been successfully upgraded to Minecraft version 1.11.2 and it was created originally for a school project.
 
