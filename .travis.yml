@@ -1,4 +1,6 @@
 language: java
+after_script:
+  - ./gradlew jar
 deploy:
   provider: releases
   api_key:
