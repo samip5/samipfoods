@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "sf:blocks/cheese_top",
+    "down": "sf:blocks/cheese_top",
+    "west": "sf:blocks/cheese_side",
+    "east": "sf:blocks/cheese_side",
+    "north": "sf:blocks/cheese_side",
+    "south": "sf:blocks/cheese_side"
+  }
+}

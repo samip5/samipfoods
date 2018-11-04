@@ -1,14 +1,14 @@
 [
 {
-  "modid": "samipfoods",
-  "name": "Samip's Food Mod",
-  "description": "An mod originially for a school project. Adds food items and worldgen + blocks, including Finnish pasta.",
-  "version": "Alpha",
-  "mcversion": "${mcversion}",
+  "modid": "sf",
+  "name": "SamipFoods Mod",
+  "description": "A mod",
+  "version": "0.1a",
+  "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
-  "authorList": ["samip537", "ZaweriRunewright"],
-  "credits": "To Pam for allowing the use of HarvestCraft's textures for some of the items and to ZaweriRunewright for helping with the mod (not limited to textures).",
+  "authorList": ["samip537"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

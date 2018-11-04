@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "CEC",
+    "PPP",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "E":
+    {
+      "item": "minecraft:EGG"
+    },
+    "C":
+    {
+      "item": "sf:cheese"
+    },
+    "P":
+    {
+      "item": "sf:pasta"
+    },
+    "B":
+    {
+      "item": "minecraft:COOKED_BEEF"
+    }
+  },
+
+  "result":
+  {
+    "item": "sf:raw_lasagna",
+    "count": 4
+  }
+}

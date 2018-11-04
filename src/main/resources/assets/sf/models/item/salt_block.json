@@ -1,0 +1,6 @@
+{
+  "parent": "sf:block/salt_block",
+  "textures": {
+    "layer0": "sf:blocks/salt_block"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "RRR",
+    "RCR",
+    "RRR"
+  ],
+
+  "key":
+  {
+    "R":
+    {
+      "item": "sf:cheese"
+    },
+    "C":
+    {
+      "item": "sf:cracker"
+    }
+  },
+
+  "result":
+  {
+    "item": "sf:cheesecracker",
+    "count": 8
+  }
+}

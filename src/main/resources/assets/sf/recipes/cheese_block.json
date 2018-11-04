@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+
+  "key":
+  {
+    "R":
+    {
+      "item": "sf:cheese"
+    }
+  },
+
+  "result":
+  {
+    "item": "sf:cheese_block",
+    "count": 9
+  }
+}
