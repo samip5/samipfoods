@@ -1,4 +1,9 @@
 language: java
-
-before_script:
-  - chmod +x gradlew
+deploy:
+  provider: releases
+  api_key:
+    secure: u9d6/I6tb+bpSi9xC1x35wkgjOuaun/XW0VM5BAM1UoF121O8B3pnesk5o4AMPdUKXkr8VLlJlK92M8PAQU9Av1NDtp2wei5IuNzS4LH5hPr2Ko82u6kO//Op9JjpJgfk8Npt32gL0BPyXw0HjKtqNT7zfwGkDZE7x8vC6zWDAt6/JP8eDKF/9rgjoxTFKUxoNrpUiTZeBfb52T4jTlo6tW4p5ogCRu1blwWVRwqyzHYti8/5PWttnfBuuCc/cZKlgQ6YBMhxdO3diWjh/8Kj/WaSqXXf2bAOoNyN+MqDNRQ20mNoNRuk50d6fScz1CwbhjHKvtLaVEYn5vwfgJwaaOERjDThoCQmPkyEuLfeJTLk9sdKlvpn/HsIZ+8lifpNn4jQJPx502e8s3hJgDC4tGpoZT7ftgBLzsM5XRA96Ncn8efJx+yFR0YuE59zPMH+VsIvp7Jg6K0DqYcMsFRCCwaGxBgS133oOqOtfwxxJUz+40ue4qSVj4oR3OyKwZSbL3g1CIKq62LisUT+UfENCdLkDbRLNz140DOPVJrsFxWm3tIiKv0Ud/8uu5GkHjJdeFW+PAGRUfxLj/SlcQu0yJvWRBb7H/yy8LfBkKsXzXFtgIskVxQs6e6NSq4mEOZn7xbKONvL8zhycwrwht/BcKWr3YXYWeRPsfwbnqWe/0=
+  file: build/libs/sf*
+  on:
+    repo: samip5/samipfoods
+    branch: 1.12.2
